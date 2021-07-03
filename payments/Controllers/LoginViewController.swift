@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
             loginView.loginTextField.isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 3, revert: true)
             return
         }
-        
         guard !password.isEmpty else {
             loginView.passwordTextField.isError(baseColor: UIColor.gray.cgColor, numberOfShakes: 3, revert: true)
             return
@@ -64,7 +63,6 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 self.showAlert(title: "Error!", message: "Autorization error")
             }
-        }
-        
+        }        
     }
 }
